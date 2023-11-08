@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Elprisapplikation</title>
+    <link rel="stylesheet" href="static/css/index.css">
 </head>
-<body>
-    <h1>Hämta Elpris</h1>
+<body style="background color: #d3d7de; ">
+
+    <h1>Hämta Elpriser idag</h1>
     <form method="post" action="/result">
+
         <label for="year">År:</label>
         <input type="text" id="year" name="year" required><br>
 
@@ -20,5 +23,6 @@
         <input type="text" id="price_class" name="price_class" required><br>
         <input type="submit" value="Hämta Elpris">
     </form>
+    <p><a href="https://www.elprisetjustnu.se"><img src="https://ik.imagekit.io/ajdfkwyt/hva-koster-strommen/elpriser-tillhandahalls-av-elprisetjustnu_ttNExOIU_.png" alt="Elpriser tillhandahålls av Elpriset just nu.se" width="200" height="45"></a></p>
 </body>
 </html>

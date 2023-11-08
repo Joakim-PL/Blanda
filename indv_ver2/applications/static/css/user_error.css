@@ -1,0 +1,25 @@
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.styled-table thead {
+    background-color: #f2f2f2;
+}
+
+.styled-table th, .styled-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.styled-table td {
+    vertical-align: top;
+}
+
+/* Styling exempel */
+.styled-table th {
+    background-color: #3498db;
+    color: white;
+}

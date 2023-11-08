@@ -13,7 +13,8 @@ th, td {
 }
 
 th {
-    background-color: #f2f2f2;
+    background-color: #3498db;
+
 }
 
 .container {
@@ -23,10 +24,15 @@ th {
 }
 
 h1 {
-    background-color: #f2f2f2;
-    width: 100%;
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
     text-align: center;
+    border: 2px solid black;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
     margin: 0;
-    padding: 20px;
+}
 
+body {
+background-color: #e9edf5;
 }
