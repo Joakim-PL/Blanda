@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elpriser Resultat</title>
+</head>
+<body>
+ <h1>Elpriser Resultat</h1>
+
+    <p>Här är de aktuella elpriserna:</p>
+    {% for time, price in el_prices.items() %}
+        <p>Tid: {{ time }}, Pris: {{ price }}</p>
+    {% endfor %}
+
+</body>
+</html>

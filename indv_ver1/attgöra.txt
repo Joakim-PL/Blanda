@@ -1,0 +1,32 @@
+Detta är en ganska omfattande uppgift som inkluderar att skapa en Flask-webbapplikation med formulär, datumvalidering, hantering av API-anrop och utskrift av resultat. Jag kan ge dig en övergripande vägledning för att utföra uppgiften, men jag rekommenderar att du tar en steg-för-steg-ansats och söker mer detaljerad information eller exempel för varje del av uppgiften.
+
+Här är en grov översikt av hur du kan gå tillväga:
+
+Konfigurera din Flask-applikation:
+Skapa en ny Flask-applikation och konfigurera den.
+
+Skapa ett formulär:
+Använd Flask-WTF eller andra Flask-formulärbibliotek för att skapa ett formulär som inkluderar fält för år, månad, dag och prisklass. Definiera även giltiga datumbegränsningar i formuläret.
+
+Hantera datumvalidering:
+Du kan använda Python-biblioteket datetime för att utföra validering av datumen enligt de angivna begränsningarna.
+
+Skapa en API-endpoint:
+Skapa en Flask-endpoint (till exempel /get_prices) som tar emot POST-förfrågningar med de angivna parametrarna från formuläret.
+
+Anropa elpris API:
+Använd Python's requests bibliotek för att göra ett API-anrop till elpris API och hämta priser baserat på de angivna parametrarna.
+
+Strukturera och presentera resultatet:
+Ta API-svaret och strukturera det i en form som du vill visa på webbsidan. Använd Flask-templates (Jinja2) för att generera HTML-sidan och visa resultatet.
+
+Lägg till felhantering:
+Implementera felhantering om användaren anger ogiltiga datum eller om API-anropet misslyckas. Du kan använda Flask-flash-meddelanden för att visa felmeddelanden till användaren.
+
+Lägg till testfall:
+Skapa enhetstest för dina Flask-rutter och funktioner med hjälp av ett testramverk som unittest eller pytest. Testa för olika scenarier, inklusive ogiltiga inmatningsvärden.
+
+Lägg till felhantering för 404-sidor:
+Implementera en 404-sida (Page Not Found) i Flask-appen för att hantera odefinierade endpoints.
+
+Denna översikt ger dig en grundläggande struktur för att bygga din Flask-applikation. Börja med att skapa Flask-applikationen och ett enkelt formulär och fortsätt att lägga till funktionalitet stegvis enligt beskrivningen ovan. Om du har specifika frågor om någon av stegen, kan du be om mer detaljerad hjälp.

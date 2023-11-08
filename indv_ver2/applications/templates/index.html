@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Elprisapplikation</title>
+</head>
+<body>
+    <h1>Hämta Elpris</h1>
+    <form method="post" action="/result">
+        <label for="year">År:</label>
+        <input type="text" id="year" name="year" required><br>
+
+        <label for="month">Månad:</label>
+        <input type="text" id="month" name="month" required><br>
+
+        <label for="day">Dag:</label>
+        <input type="text" id="day" name="day" required><br>
+
+        <label for="price_class">Prisklass:</label>
+        <input type="text" id="price_class" name="price_class" required><br>
+        <input type="submit" value="Hämta Elpris">
+    </form>
+</body>
+</html>

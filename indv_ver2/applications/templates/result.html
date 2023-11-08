@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultat</title>
+    <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+    <h1>Elprisinformation för {{ year }}/{{ month }}-{{ day }} ({{ price_class }})</h1>
+    <br>
+    <br>
+<div class="container">
+    <table>
+        <tr>
+            <th>Tid</th>
+            <th>SEK per kWh</th>
+            <th>EUR per kWh</th>
+        </tr>
+        {% for entry in data %}
+        <tr>
+            <td>{{ entry.time_start.split('T')[1][:5] }}</td>  <!-- Formatera tid till hh:mm (05:00) -->
+            <td>{{ entry.SEK_per_kWh }}</td>
+            <td>{{ entry.EUR_per_kWh }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>
