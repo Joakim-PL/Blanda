@@ -18,8 +18,18 @@
     vertical-align: top;
 }
 
-/* Styling exempel */
+
 .styled-table th {
     background-color: #3498db;
     color: white;
 }
+
+h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+h5 {
+    font-size: 16px;
+    color: #666;
+    text-align: center;
